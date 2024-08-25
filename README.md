@@ -41,7 +41,7 @@ The **Weather Display Station** project uses an Arduino to interface with a DHT2
 #define DHTPIN 2
 
 // Define DHT type
-#define DHTTYPE DHT22
+#define DHTTYPE DHT22  // Change to DHT22
 
 // Initialize the DHT sensor
 DHT dht(DHTPIN, DHTTYPE);
