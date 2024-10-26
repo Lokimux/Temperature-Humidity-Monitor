@@ -7,7 +7,7 @@ The **Weather Display Station** project uses an Arduino to interface with a DHT2
 ## Components Used
 
 - **Arduino Uno** (or any compatible Arduino board)
-- **DHT22 Sensor** (Temperature and Humidity Sensor)
+- **DHT11 Sensor** (Temperature and Humidity Sensor)
 - **16x2 LCD Display with I2C Interface**
 - **Jumper Wires**
 - **Breadboard** (optional)
@@ -37,11 +37,11 @@ The **Weather Display Station** project uses an Arduino to interface with a DHT2
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
 
-// Define DHT22 sensor pin
+// Define DHT11 sensor pin
 #define DHTPIN 2
 
 // Define DHT type
-#define DHTTYPE DHT22  // Change to DHT22
+#define DHTTYPE DHT11  // Change to DHT11
 
 // Initialize the DHT sensor
 DHT dht(DHTPIN, DHTTYPE);
